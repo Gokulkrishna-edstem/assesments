@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- css linking -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- linking ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <!-- main dashbord div -->
+    <div class="dashbord">
+      <!-- section1 empty -->
+      <div class="section1"></div>
+      <!-- section 2 having menu and id  -->
+      <div class="section2">
+        <header>
+          <!-- menu -->
+          <div class="menubar">
+            <ion-icon class="menuicon" name="menu-outline"></ion-icon>
+          </div>
+
+          <!-- notification and id -->
+          <div class="identity">
+            <div class="notification">
+              <ion-icon
+                class="bell-icon"
+                name="notifications-outline"
+              ></ion-icon>
+            </div>
+            <div class="profile">
+              <!-- profile image -->
+              <img
+                src="./img/zhanarys-dakhiyev-WMlRkqt1vII-unsplash.jpg"
+                alt="profile image"
+              />
+              <!-- name and role -->
+              <div class="role">
+                <h4>David Johnson</h4>
+                <p>Admin</p>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+
+      <!-- section 3 -->
+      <div class="section3">
+        <aside>
+          <p class="menu-dashbord">Menu</p>
+          <div class="menu-list">
+            <ul>
+              <li><ion-icon name="apps-outline"></ion-icon> Dashbord</li>
+              <li>
+                <ion-icon name="help-circle-outline"></ion-icon> Questions
+                Library
+              </li>
+              <li><ion-icon name="hourglass-outline"></ion-icon> Assesment</li>
+              <li>
+                <ion-icon name="hourglass-outline"></ion-icon> Customization
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+
+      <!-- section4 -->
+      <div class="section4">
+        <!-- heading -->
+        <section class="assesment">
+          <h1>Assesment</h1>
+        </section>
+        <!-- cards -->
+        <section class="cards">
+          <div class="card assesment-details-1">
+            <!-- assesment details 1 -->
+            <h4>Assesment Details</h4>
+            <ul>
+              <li><strong>6 </strong> <span>Multiple Choice</span></li>
+              <li><strong>4</strong> <span>Code Based</span></li>
+              <li><strong>4</strong> <span>True or False</span></li>
+            </ul>
+          </div>
+          <!-- assesment details 2 -->
+          <div class="card assesment-details-2">
+            <h4>Assesment Details</h4>
+            <div class="graph-details">
+              <!-- graph image -->
+              <div class="graph">
+                <div class="progress-bar">12%</div>
+                <p>Qualifying</p>
+              </div>
+              <!-- graph details -->
+              <div class="graph-value">
+                <ul>
+                  <li><strong>6 </strong> <span>Multiple Choice</span></li>
+                  <li><strong>4</strong> <span>Code Based</span></li>
+                  <li><strong>4</strong> <span>True or False</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- newsletter signup form -->
+          <div class="card-large newsletter">
+            <div class="invitation">
+              <h3>You haven't invited any candidates yet</h3>
+              <h5>0 candidates invited</h5>
+            </div>
+            <p class="invite-candidates">invite the candidates below</p>
+            <input class="email" type="gmail" placeholder="Enter emails" />
+            <div class="button-group">
+              <button class="btn send">
+                <ion-icon class="btn-icon" name="send-outline"></ion-icon>Send
+              </button>
+              <button class="btn">
+                <ion-icon class="btn-icon" name="link-outline"></ion-icon>Copy
+                Link
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="candidates">
+          <!-- search bar for candidates -->
+          <div class="search-candidates">
+            <input type="text" placeholder="Search Candidates" />
+          </div>
+          <!-- list of candidates card -->
+          <div class="candidates-list">
+            <!-- card 1 -->
+            <div class="candidate-cards">
+              <!-- name and submitted -->
+              <div class="name">
+                <h3>Cyriac Mathew</h3>
+                <div class="submitted">
+                  <p>submitted</p>
+                  <ion-icon name="document-outline"></ion-icon>
+                </div>
+              </div>
+              <!-- gmail -->
+              <h5 class="gmail-list">
+                <ion-icon name="mail-open-outline"></ion-icon
+                >cyricmathew@gmail.com
+              </h5>
+              <!-- divider -->
+              <hr />
+              <!-- divider -->
+              <div class="mark-details">
+                <div class="detaiing">
+                  <h5>joined</h5>
+                  <p>
+                    <ion-icon name="calendar-outline"></ion-icon> Sep 09, 2024
+                  </p>
+                </div>
+                <div class="detaiing">
+                  <h5>Time Taken</h5>
+                  <p><ion-icon name="time-outline"></ion-icon> 15:00 min</p>
+                </div>
+                <div class="detaiing">
+                  <h5>Cheating</h5>
+                  <p>Not Detected</p>
+                </div>
+                <div class="detaiing">
+                  <h5>Final Score</h5>
+                  <p>60%</p>
+                </div>
+              </div>
+            </div>
+            <!-- card 2 -->
+            <div class="candidate-cards">
+              <!-- name and submitted -->
+              <div class="name">
+                <h3>Cyriac Mathew</h3>
+                <div class="submitted">
+                  <p>submitted</p>
+                  <ion-icon name="document-outline"></ion-icon>
+                </div>
+              </div>
+              <!-- gmail -->
+              <h5 class="gmail-list">
+                <ion-icon name="mail-open-outline"></ion-icon
+                >cyricmathew@gmail.com
+              </h5>
+              <!-- divider -->
+              <hr />
+              <!-- divider -->
+              <div class="mark-details">
+                <div class="detaiing">
+                  <h5>joined</h5>
+                  <p>
+                    <ion-icon name="calendar-outline"></ion-icon> Sep 09, 2024
+                  </p>
+                </div>
+                <div class="detaiing">
+                  <h5>Time Taken</h5>
+                  <p><ion-icon name="time-outline"></ion-icon> 15:00 min</p>
+                </div>
+                <div class="detaiing">
+                  <h5>Cheating</h5>
+                  <p>Not Detected</p>
+                </div>
+                <div class="detaiing">
+                  <p>Final Score</p>
+                  <p>60%</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 3 -->
+            <div class="candidate-cards">
+              <!-- name and submitted -->
+              <div class="name">
+                <h3>Cyriac Mathew</h3>
+                <div class="submitted">
+                  <p>submitted</p>
+                  <ion-icon name="document-outline"></ion-icon>
+                </div>
+              </div>
+              <!-- gmail -->
+              <h5 class="gmail-list">
+                <ion-icon name="mail-open-outline"></ion-icon
+                >cyricmathew@gmail.com
+              </h5>
+              <!-- divider -->
+              <hr />
+              <!-- divider -->
+              <div class="mark-details">
+                <div class="detaiing">
+                  <h5>joined</h5>
+                  <p>
+                    <ion-icon name="calendar-outline"></ion-icon> Sep 09, 2024
+                  </p>
+                </div>
+                <div class="detaiing">
+                  <h5>Time Taken</h5>
+                  <p><ion-icon name="time-outline"></ion-icon> 15:00 min</p>
+                </div>
+                <div class="detaiing">
+                  <h5>Cheating</h5>
+                  <p>Not Detected</p>
+                </div>
+                <div class="detaiing">
+                  <h5>Final Score</h5>
+                  <p>60%</p>
+                </div>
+              </div>
+            </div>
+            <!-- card 4 -->
+            <div class="candidate-cards">
+              <!-- name and submitted -->
+              <div class="name">
+                <h3>Cyriac Mathew</h3>
+                <div class="submitted">
+                  <p>submitted</p>
+                  <ion-icon name="document-outline"></ion-icon>
+                </div>
+              </div>
+              <!-- gmail -->
+              <h5 class="gmail-list">
+                <ion-icon name="mail-open-outline"></ion-icon
+                >cyricmathew@gmail.com
+              </h5>
+              <!-- divider -->
+              <hr />
+              <!-- divider -->
+              <div class="mark-details">
+                <div class="detaiing">
+                  <h5>joined</h5>
+                  <p>
+                    <ion-icon name="calendar-outline"></ion-icon> Sep 09, 2024
+                  </p>
+                </div>
+                <div class="detaiing">
+                  <h5>Time Taken</h5>
+                  <p><ion-icon name="time-outline"></ion-icon> 15:00 min</p>
+                </div>
+                <div class="detaiing">
+                  <h5>Cheating</h5>
+                  <p>Not Detected</p>
+                </div>
+                <div class="detaiing">
+                  <h5>Final Score</h5>
+                  <p>60%</p>
+                </div>
+              </div>
+            </div>
+            <!-- card 5 -->
+            <div class="candidate-cards">
+              <!-- name and submitted -->
+              <div class="name">
+                <h3>Cyriac Mathew</h3>
+                <div class="submitted">
+                  <p>submitted</p>
+                  <ion-icon name="document-outline"></ion-icon>
+                </div>
+              </div>
+              <!-- gmail -->
+              <h5 class="gmail-list">
+                <ion-icon name="mail-open-outline"></ion-icon
+                >cyricmathew@gmail.com
+              </h5>
+              <!-- divider -->
+              <hr />
+              <!-- divider -->
+              <div class="mark-details">
+                <div class="detaiing">
+                  <p>joined</p>
+                  <p>
+                    <ion-icon name="calendar-outline"></ion-icon> Sep 09, 2024
+                  </p>
+                </div>
+                <div class="detaiing">
+                  <p>Time Taken</p>
+                  <p><ion-icon name="time-outline"></ion-icon> 15:00 min</p>
+                </div>
+                <div class="detaiing">
+                  <p>Cheating</p>
+                  <p>Not Detected</p>
+                </div>
+                <div class="detaiing">
+                  <p>Final Score</p>
+                  <p>60%</p>
+                </div>
+              </div>
+            </div>
+            <!-- card 6 -->
+            <div class="candidate-cards">
+              <!-- name and submitted -->
+              <div class="name">
+                <h3>Cyriac Mathew</h3>
+                <div class="submitted">
+                  <p>submitted</p>
+                  <ion-icon name="document-outline"></ion-icon>
+                </div>
+              </div>
+              <!-- gmail -->
+              <h5 class="gmail-list">
+                <ion-icon name="mail-open-outline"></ion-icon
+                >cyricmathew@gmail.com
+              </h5>
+              <!-- divider -->
+              <hr />
+              <!-- divider -->
+              <div class="mark-details">
+                <div class="detaiing">
+                  <p>joined</p>
+                  <p>
+                    <ion-icon name="calendar-outline"></ion-icon> Sep 09, 2024
+                  </p>
+                </div>
+                <div class="detaiing">
+                  <p>Time Taken</p>
+                  <p><ion-icon name="time-outline"></ion-icon> 15:00 min</p>
+                </div>
+                <div class="detaiing">
+                  <p>Cheating</p>
+                  <p>Not Detected</p>
+                </div>
+                <div class="detaiing">
+                  <p>Final Score</p>
+                  <p>60%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
