@@ -1,0 +1,224 @@
+/* Use these CSS variables */
+/* :root {
+  --primary-color: #2563eb;
+  --text-color: #334155;
+  --background-color: #f8fafc;
+  --card-background: #ffffff;
+  --accent-color: #3b82f6;
+ }
+ /* Typography Scale */
+/* body {
+  font-size: 16px;
+  line-height: 1.6;
+ }
+ h1 { font-size: 2.5rem; }
+ h2 { font-size: 2rem; }
+ h3 { font-size: 1.5rem; } */
+
+/*-------------------------*/
+/* GENERAL CODE */
+/*-------------------------*/
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8fafc;
+  color: #334155;
+}
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/* Add your styles here */
+
+/*---------------------- */
+/* NAVBAR SECTION */
+/*---------------------- */
+nav {
+  background: #ffffff;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+
+  align-items: center;
+}
+
+.logo h3 {
+  color: #2563eb;
+}
+
+.primary-color {
+  color: #2563eb;
+}
+nav a {
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  display: flex;
+  gap: 20px;
+}
+
+/*---------------------- */
+/* HERO SECTION */
+/*---------------------- */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+/*---------------------- */
+/* POST-GRID SECTION */
+/*---------------------- */
+.CATEGORIES {
+  text-align: center;
+  margin-top: 3.5rem;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.posts-grid .card {
+  width: 300px;
+  height: 420px;
+  margin-top: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 3px 4px #3341551f;
+}
+.posts-grid .card .card-content {
+  padding: 10px 20px;
+}
+
+.posts-grid .card img {
+  width: 100%;
+  height: 200px;
+}
+
+.posts-grid .card .tag {
+  background-color: #2563eb;
+  color: white;
+  text-align: center;
+  position: absolute;
+  width: 200px;
+  transform: rotate(-45deg);
+  top: 10px;
+  left: -60px;
+}
+
+/*---------------------- */
+/* SIDE_BAR SECTION */
+/*---------------------- */
+aside {
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 10px;
+  height: 700px;
+  box-shadow: 1px 1px 4px 5px rgba(0, 0, 0, 0.24);
+  border-radius: 5px;
+}
+
+.about .avatars {
+  display: flex;
+}
+
+.about .avatars img:first-child {
+  margin-left: 0;
+}
+.about .avatars img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-left: -20px;
+}
+
+.side-by-side {
+  display: flex;
+}
+
+/*---------------------- */
+/* FOOTER SECTION */
+/*---------------------- */
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 4.2rem 4.5rem;
+  gap: 2.4rem;
+  border-bottom: 2px solid #333;
+}
+.footer .footer-sec {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .footer-sec p {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.footer .footer-sec a {
+  text-decoration: none;
+  color: #341553;
+}
+
+.copyright {
+  padding: 2.2rem 4.5rem;
+  font-size: 0.8rem;
+}
+
+/*---------------------- */
+/* RESPONSIVE SECTION */
+/*---------------------- */
+
+@media (max-width: 768px) {
+  /* Mobile styles */
+  .posts-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .side-by-side {
+    display: block;
+  }
+  aside {
+    height: 400px;
+    margin-top: 2.3rem;
+  }
+
+  .posts-grid .card {
+    width: 400px;
+    margin-left: 20px;
+    height: 420px;
+  }
+}
