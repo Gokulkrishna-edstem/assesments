@@ -1,0 +1,510 @@
+/* universal resetting */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* grid dividing */
+body {
+  display: grid;
+  grid-template-rows: 80px 1fr;
+}
+
+/* header section */
+.grid--column-1 {
+  /* background-color: blue; */
+}
+
+/* heading section */
+header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+header .mainHeading {
+  /* background-color: turquoise; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 16.7%;
+  height: 100%;
+}
+
+header .mainHeading h2 {
+  font-weight: 400;
+  font-size: 25px;
+}
+
+header.mainHeading .icon {
+  display: flex;
+  font-size: 20px;
+}
+
+header .searchbar {
+  width: 72%;
+  /* background-color: wheat; */
+  display: flex;
+  align-items: center;
+}
+
+header .searchbar .search {
+  /* background-color: green; */
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  height: 50%;
+  width: 50%;
+  margin-left: 20px;
+  border-radius: 7px;
+  border: 1px solid rgba(194, 194, 194, 0.562);
+}
+
+header .searchbar .search h4 {
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 5px;
+}
+
+#checkbox {
+  display: none;
+}
+header .profile {
+  display: flex;
+  align-items: center;
+  /* background-color: turquoise; */
+}
+
+header .profile .profileIcon {
+  /* background-color: beige; */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  background-color: rgba(218, 218, 218, 0.336);
+}
+
+header .profile .profileIcon .icon1 {
+  font-size: 15px;
+}
+
+header .profile img {
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+/* -------------------------------------- */
+
+/* --------------------------------------- */
+/* main section */
+.grid--column-2 {
+  /* background-color: rgb(9, 173, 9); */
+  display: grid;
+  grid-template-columns: 250px 4fr;
+}
+
+/* ----------------------- */
+/* sidebar */
+aside {
+  /* background-color: aqua; */
+}
+
+.hamburger {
+  display: none;
+}
+aside ul {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  list-style: none;
+  width: 100%;
+  /* background-color: blue; */
+}
+aside ul li {
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  padding: 5px 30px;
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+}
+aside ul li .icon2 {
+  margin-right: 10px;
+  font-size: 20px;
+}
+aside ul li:first-child {
+  background-color: rgba(20, 20, 119, 0.829);
+  color: white;
+}
+/* ---------------------------- */
+
+/* ----------------------- */
+/* main section */
+.main {
+  background-color: rgba(211, 211, 211, 0.486);
+  padding: 20px;
+}
+/* heading section */
+.main .heading {
+  /* background-color: brown; */
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main .heading button {
+  height: 40px;
+  width: 150px;
+  border-radius: 7px;
+  background-color: rgba(20, 20, 119, 0.829);
+  color: white;
+}
+
+/* cards section */
+.cards {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards .card {
+  background-color: white;
+  width: 290px;
+  height: 120px;
+  border-radius: 7px;
+  padding: 15px 20px;
+}
+
+.cards .card h5 {
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+/* chart section */
+.charts {
+  display: flex;
+  margin-top: 20px;
+}
+
+.chart {
+  background-color: white;
+  height: 350px;
+  width: 595px;
+  border-radius: 5px;
+  padding: 15px;
+}
+.chart:first-child {
+  margin-right: 20px;
+}
+
+.charts .chart .pichart {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.charts .chart .pichart img {
+  width: 350px;
+  height: 300px;
+}
+
+.charts .chart .pichart .details ul {
+  list-style: none;
+}
+
+.charts .chart .pichart .details .color {
+  width: 15px;
+  height: 7px;
+  margin-right: 5px;
+  background-color: aqua;
+  border-radius: 5px;
+}
+
+.charts .chart .pichart .details ul li:nth-child(1) .color {
+  background-color: brown;
+}
+.charts .chart .pichart .details ul li:nth-child(2) .color {
+  background-color: rgb(101, 28, 185);
+}
+.charts .chart .pichart .details ul li:nth-child(3) .color {
+  background-color: rgb(30, 124, 77);
+}
+.charts .chart .pichart .details ul li:nth-child(4) .color {
+  background-color: rgb(37, 76, 94);
+}
+
+.charts .chart .pichart .details ul li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+/* chart 2 */
+
+.charts .chart2 {
+  padding: 15px 25px;
+}
+.charts .chart .eventrecord {
+  width: 95%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(196, 190, 190, 0.26);
+  margin-bottom: 10px;
+  align-self: center;
+}
+
+.charts .chart .eventrecord h4 {
+  font-weight: 500;
+}
+.charts .chart .eventrecord button {
+  width: 70px;
+  height: 25px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 153, 0, 0.753);
+  background-color: rgba(241, 150, 31, 0.404);
+}
+
+/* chart 3  */
+.charts .chart3 {
+  padding: 15px;
+}
+
+.charts .chart3 .barchart table {
+  margin-top: 20px;
+  padding-left: 45px;
+  padding-top: 15px;
+}
+
+.charts .chart3 .barchart table tr {
+  margin-top: 15px;
+  border-collapse: separate;
+  border-spacing: 0 8px;
+  line-height: 40px;
+}
+
+/* chart 4 */
+.charts .chart4 {
+  padding: 15px;
+}
+
+.charts .chart4 img {
+  width: 350px;
+}
+
+.show {
+  display: flex;
+}
+
+.icons {
+  display: none;
+}
+.detailsBar {
+  display: flex;
+  justify-content: space-around;
+  font-size: 10px;
+}
+
+.detail2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color1 {
+  height: 7px;
+  margin-right: 5px;
+  width: 15px;
+  background-color: blue;
+  border-radius: 5px;
+}
+
+/* responsive  */
+/* for 1100px tablet screen */
+@media (max-width: 1100px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+  }
+  header .searchbar {
+    display: none;
+  }
+  header .mainHeading {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  header .mainHeading h2 {
+    font-weight: 400;
+    font-size: 15px;
+  }
+  .cards {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .cards .card {
+    background-color: white;
+    width: 95%;
+    height: 120px;
+    border-radius: 7px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .charts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .chart {
+    background-color: white;
+    height: 350px;
+    width: 95%;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 15px;
+  }
+  .chart:first-child {
+    margin-right: 0;
+  }
+}
+
+/* for 900px mobile screen */
+@media (max-width: 900px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid--column-2 {
+    margin-top: 15px;
+  }
+  aside {
+    margin-top: 15px;
+  }
+  aside .sidebar {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  aside .sidebar li {
+    display: block;
+  }
+  .hamburger {
+    display: flex;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+  }
+  header .searchbar {
+    display: none;
+  }
+  header .mainHeading {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  header .mainHeading .icon {
+    display: none;
+  }
+
+  header .mainHeading h2 {
+    font-weight: 400;
+    font-size: 10px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+  }
+  .grid--column-2 {
+    /* background-color: rgb(9, 173, 9); */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icons {
+    display: flex;
+  }
+  #closeicon {
+    display: none;
+  }
+
+  #checkbox:checked ~ .icons #menuicon {
+    display: none;
+  }
+  #checkbox:checked ~ .icons #closeicon {
+    display: block;
+  }
+
+  #checkbox:checked ~ .sidebar {
+    display: block;
+  }
+  .cards {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .cards .card {
+    background-color: white;
+    width: 95%;
+    height: 120px;
+    border-radius: 7px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .charts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .chart {
+    background-color: white;
+    height: 350px;
+    width: 95%;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 15px;
+  }
+  .chart:first-child {
+    margin-right: 0;
+  }
+}

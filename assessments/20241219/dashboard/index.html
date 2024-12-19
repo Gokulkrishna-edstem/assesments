@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+  </head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <body>
+    <div class="grid--column-1">
+      <header>
+        <!-- header section -->
+        <div class="mainHeading">
+          <h2><strong>GRC</strong> REGISTER</h2>
+          <ion-icon class="icon" name="menu-outline"></ion-icon>
+        </div>
+        <!-- search bar -->
+        <div class="searchbar">
+          <div class="search">
+            <ion-icon name="search-outline"></ion-icon>
+            <h4>Search</h4>
+          </div>
+        </div>
+        <div class="profile">
+          <div class="profileIcon">
+            <ion-icon class="icon1" name="notifications-outline"></ion-icon>
+          </div>
+          <img src="./img/avatar.jpg" alt="avatar image" />
+          <div class="profileIcon">
+            <ion-icon class="icon1" name="chevron-down-outline"></ion-icon>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <!------->
+    <div class="grid--column-2">
+      <!-- sidebar -->
+      <aside>
+        <ul class="sidebar">
+          <li>
+            <ion-icon class="icon2" name="home-outline"></ion-icon>Dashboard
+          </li>
+          <li>
+            <ion-icon class="icon2" name="layers-outline"></ion-icon>Modules
+          </li>
+          <li>
+            <ion-icon class="icon2" name="people-outline"></ion-icon>Loss Events
+            & Issue Management
+          </li>
+          <li>
+            <ion-icon class="icon2" name="ticket-outline"></ion-icon>New Product
+            Approval
+          </li>
+          <li>
+            <ion-icon class="icon2" name="layers-outline"></ion-icon>Third Party
+            Management
+          </li>
+          <li>
+            <ion-icon class="icon2" name="newspaper-outline"></ion-icon>Business
+            Risk Self Assessment
+          </li>
+          <li>
+            <ion-icon class="icon2" name="star-outline"></ion-icon>User Access
+            Request
+          </li>
+          
+        </ul>
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox" class="icons"><ion-icon id="menuicon" name="menu-outline"></ion-icon>
+          <ion-icon id="closeicon" name="close-outline"></ion-icon></label>
+        
+      </aside>
+      <!---------------------------->
+
+      <section class="main">
+        <!-- heading section -->
+
+        <div class="heading">
+          <h2>Dashboard</h2>
+          <button>Report New Event</button>
+        </div>
+
+        <!---------->
+        <!-- card secton -->
+        <div class="cards">
+          <div class="card">
+            <h5>All Events</h5>
+            <h2>140</h2>
+          </div>
+          <div class="card">
+            <h5>Active Loss Events</h5>
+            <h2>100</h2>
+          </div>
+          <div class="card">
+            <h5>Escalated Compliance Issue</h5>
+            <h2>10</h2>
+          </div>
+          <div class="card">
+            <h5>Event Closed</h5>
+            <h2>30</h2>
+          </div>
+          <!----------->
+        </div>
+        <!---------------------------->
+        <div class="charts">
+          <div class="chart chart1">
+            <h3>Workflow Status</h3>
+            <div class="pichart">
+              <!-- chart -->
+             
+<canvas id="myChart" style="width:60%;max-width:450px"></canvas>
+
+<script>
+var xValues = ["", "", "", ""];
+var yValues = [40,20,20,20];
+var barColors = [
+  "#b91d47",
+  "#00aba9",
+  "#2b5797",
+  "#e8c3b9",
+  "#1e7145"
+];
+
+new Chart("myChart", {
+  type: "doughnut",
+  data: {
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    title: {
+      // display: true,
+      
+    }
+  }
+});
+</script>
+              <!-- ------- -->
+              <div class="details">
+                <ul>
+                  <li>
+                    <div class="color"></div>
+                    Events in Draft
+                  </li>
+                  <li>
+                    <div class="color"></div>
+                    Events Closed
+                  </li>
+                  <li>
+                    <div class="color"></div>
+                    Cancelled
+                  </li>
+                  <li>
+                    <div class="color"></div>
+                    Active
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="chart chart2">
+            <h3>Recently Added Records</h3>
+            <div class="eventrecord">
+              <h4>Event Record 1</h4>
+              <button>In Draft</button>
+            </div>
+            <div class="eventrecord">
+              <h4>Event Record 1</h4>
+              <button>In Draft</button>
+            </div>
+            <div class="eventrecord">
+              <h4>Event Record 1</h4>
+              <button>In Draft</button>
+            </div>
+            <div class="eventrecord">
+              <h4>Event Record 1</h4>
+              <button>In Draft</button>
+            </div>
+            <div class="eventrecord">
+              <h4>Event Record 1</h4>
+              <button>In Draft</button>
+            </div>
+          </div>
+        </div>
+        <div class="charts">
+          <div class="chart chart3">
+            <h3>Risk Metric</h3>
+            <div class="barchart">
+              <table>
+                <tr>
+                  <td>Very Low</td>
+                  <td>
+                    <div
+                      style="
+                        background-color: rgba(51, 98, 153, 0.808);
+                        width: 270px;
+                        height: 15px;
+                      "
+                    ></div>
+                  </td>
+                  <td>30%</td>
+                </tr>
+                <tr>
+                  <td>Low</td>
+                  <td>
+                    <div
+                      style="
+                        background-color: rgba(51, 98, 153, 0.808);
+                        width: 300px;
+                        height: 15px;
+                      "
+                    >
+                      
+                    </div>
+                  </td>
+                  <td>40%</td>
+                </tr>
+                <tr>
+                  <td>Moderate</td>
+                  <td>
+                    <div
+                      style="
+                        background-color: rgba(51, 98, 153, 0.808);
+                        width: 180px;
+                        height: 15px;
+                      "
+                    >
+                      
+                    </div>
+                  </td>
+                  <td>15%</td>
+                </tr>
+                <tr>
+                  <td>High</td>
+                  <td>
+                    <div
+                      style="
+                        background-color: rgba(51, 98, 153, 0.808);
+                        width: 150px;
+                        height: 15px;
+                      "
+                    >
+                      
+                    </div>
+                    <td>10%</td>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Critical</td>
+                  <td>
+                    <div
+                      style="
+                        background-color: rgba(51, 98, 153, 0.808);
+                        width: 100px;
+                        height: 15px;
+                      "
+                    >
+                      
+                    </div>
+                  </td>
+                  <td>50%</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <!-- chart 4  -->
+          <div class="chart chart4">
+            <h3>Event Volume </h3>
+           
+<canvas id="barChart" style="width:100%;max-width:600px"></canvas>
+
+<script>
+var xValues = ["jan", "feb", "march", "april", "may", "june" , "july", , "aug","sep", "oct", "nov", "dec"];
+var yValues = [55, 49, 44, 24, 15,35,45,12,14,55,35,25];
+var barColors = ["red", "green","blue","orange","brown","red", "green","blue","orange","brown","red", "green"];
+
+new Chart("barChart", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+    }
+  }
+});
+</script>
+<div class="detailsBar">
+  <div class="detail2">
+  <div class="color1"></div>
+  Active Events
+</div>
+  <div class="detail2">
+  <div class="color1"></div>
+  Closed Events
+</div>
+  <div class="detail2">
+  <div class="color1"></div>
+  Escavated Events
+</div>
+</div>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+  </body>
+  <script src="./script.js"></script>
+</html>
