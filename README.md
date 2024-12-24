@@ -21,4 +21,4 @@
 
 - [Nov 21,2024](assessments/20241121/blog-challenge-test)
 - [Dec 05,2024](assessments/20241205/dashbord)
-- [Dec 19,2024](assessments/20241219/dashbord)
+- [Dec 19,2024](assessments/20241219/dashboard)
