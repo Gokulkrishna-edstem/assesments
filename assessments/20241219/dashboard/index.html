@@ -25,8 +25,9 @@
       <header>
         <!-- header section -->
         <div class="mainHeading">
-          <h2><strong>GRC</strong> REGISTER</h2>
-          <ion-icon class="icon" name="menu-outline"></ion-icon>
+          <h2><strong class="grc">GRC</strong> <span class="hidden">REGISTER</span></h2>
+          <ion-icon class="iconOpen" name="menu-outline"></ion-icon>
+          <ion-icon class="iconClose closeshow" name="close-outline"></ion-icon>
         </div>
         <!-- search bar -->
         <div class="searchbar">
@@ -53,36 +54,34 @@
       <aside>
         <ul class="sidebar">
           <li>
-            <ion-icon class="icon2" name="home-outline"></ion-icon>Dashboard
+            <ion-icon class="icon2" name="home-outline"></ion-icon><span class="hidden">Dashboard</span> 
           </li>
           <li>
-            <ion-icon class="icon2" name="layers-outline"></ion-icon>Modules
+            <ion-icon class="icon2" name="layers-outline"></ion-icon><span class="hidden">Modules</span>
           </li>
           <li>
-            <ion-icon class="icon2" name="people-outline"></ion-icon>Loss Events
-            & Issue Management
+            <ion-icon class="icon2" name="people-outline"></ion-icon><span class="hidden">Loss Events & Issue Management</span>
+            
           </li>
           <li>
-            <ion-icon class="icon2" name="ticket-outline"></ion-icon>New Product
-            Approval
+            <ion-icon class="icon2" name="ticket-outline"></ion-icon><span class="hidden">New Product Approval</span>
+            
           </li>
           <li>
-            <ion-icon class="icon2" name="layers-outline"></ion-icon>Third Party
-            Management
+            <ion-icon class="icon2" name="layers-outline"></ion-icon><span class="hidden">Third Party Management</span>
           </li>
           <li>
-            <ion-icon class="icon2" name="newspaper-outline"></ion-icon>Business
-            Risk Self Assessment
+            <ion-icon class="icon2" name="newspaper-outline"></ion-icon><span class="hidden">Business Risk Self Assessment</span>
           </li>
           <li>
-            <ion-icon class="icon2" name="star-outline"></ion-icon>User Access
-            Request
+            <ion-icon class="icon2" name="star-outline"></ion-icon><span class="hidden">User Access Request</span>
+            
           </li>
           
         </ul>
-        <input type="checkbox" id="checkbox">
+        <!-- <input type="checkbox" id="checkbox">
         <label for="checkbox" class="icons"><ion-icon id="menuicon" name="menu-outline"></ion-icon>
-          <ion-icon id="closeicon" name="close-outline"></ion-icon></label>
+          <ion-icon id="closeicon" name="close-outline"></ion-icon></label> -->
         
       </aside>
       <!---------------------------->
@@ -120,10 +119,11 @@
         <div class="charts">
           <div class="chart chart1">
             <h3>Workflow Status</h3>
+            <div class="pichartMainDiv">
             <div class="pichart">
               <!-- chart -->
              
-<canvas id="myChart" style="width:60%;max-width:450px"></canvas>
+<canvas class="doughnutChart" id="myChart" style="width:100%;height:100%; max-width:450px"></canvas>
 
 <script>
 var xValues = ["", "", "", ""];
@@ -145,13 +145,11 @@ new Chart("myChart", {
     }]
   },
   options: {
-    title: {
-      // display: true,
-      
-    }
+    
   }
 });
 </script>
+</div>
               <!-- ------- -->
               <div class="details">
                 <ul>
@@ -173,8 +171,9 @@ new Chart("myChart", {
                   </li>
                 </ul>
               </div>
-            </div>
+            
           </div>
+        </div>
           <div class="chart chart2">
             <h3>Recently Added Records</h3>
             <div class="eventrecord">
